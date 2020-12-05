@@ -1,4 +1,5 @@
-      [{
+      [
+          {
     "clothingType": "Cold Weather",
     "appearalList":[
         "beanie",
@@ -51,6 +52,5 @@
         "accessory1":"",
         "accessory2":""
     }
-
-
+}
       ]
