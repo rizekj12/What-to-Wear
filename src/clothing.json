@@ -1,0 +1,56 @@
+      [{
+    "clothingType": "Cold Weather",
+    "appearalList":[
+        "beanie",
+        "sweater",
+        "Coat",
+        "gloves",
+        "scarf",
+        "boots"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
+},{
+    "clothingType": "Cold & Rainy",
+    "appearalList":[
+        "beanie",
+        "sweater",
+        "rain coat",
+        "warm pants",
+        "gloves",
+        "umbrella",
+        "rain boots"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
+},{
+    "clothingType": "Chilly",
+    "appearalList":[
+        "jacket",
+        "hoodie",
+        "jeans",
+        "boots or sneakers"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
+
+
+      ]
