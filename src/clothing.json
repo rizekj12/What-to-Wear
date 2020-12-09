@@ -1,4 +1,4 @@
-      [
+{ "suggestions" : [
           {
     "clothingType": "Cold Weather",
     "appearalList":[
@@ -52,5 +52,51 @@
         "accessory1":"",
         "accessory2":""
     }
+},{
+    "clothingType": "Warm",
+    "appearalList":[
+        "lite sweater or T-shirt",
+        "jeans",
+        "sneakers or causual shoes"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
+}, {
+    "clothingType": "Warm & Rainy",
+    "appearalList":[
+        "T-shirt",
+        "jeans or shorts",
+        "sneakers",
+        "umbrella"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
+},{
+    "clothingType": "Hot",
+    "appearalList":[
+        "T-shirt or tank top",
+        "jeans are ok, preferably shorts",
+        "sneakers or causual shoes"
+    ],
+    "images": {
+        "head": "",
+        "torso": "",
+        "legs":"",
+        "feet": "",
+        "accessory1":"",
+        "accessory2":""
+    }
 }
-      ]
+      ]}
