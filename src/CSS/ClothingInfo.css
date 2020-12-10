@@ -1,0 +1,36 @@
+.cold{
+    background-color:blue; 
+    color:white;
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+.chilli{
+    background-color:skyblue;
+    color: white; 
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+.warm{
+    background-color:orange; 
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+.hot{
+    background-color:red;
+    color: white; 
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+

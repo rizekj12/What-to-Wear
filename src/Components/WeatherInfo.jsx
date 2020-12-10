@@ -6,12 +6,12 @@ const WeatherInfo = (props) => {
        <h2> weather info</h2>
       {props.currentTemp && props.currentWeather &&
       <div> 
-        <h3>{props.currentTemp.temp}</h3>
+        <h3>Temp: {props.currentTemp.temp}</h3>
         <h3>{props.currentWeather[0].description}</h3>
       </div>
       }
 
-      
+
 
 
  

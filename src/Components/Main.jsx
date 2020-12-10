@@ -14,6 +14,7 @@ const Main = () => {
       const [clothingSuggestion, setClothingSuggestion] = useState(json);
       const [suggestion, setSuggestion] = useState(null)
       const [input, setInput] = useState('');
+      const [weatherStyle, setWeatherStyle] = useState('')
 
 
 
@@ -23,44 +24,33 @@ const Main = () => {
 
       const setTemp = async (e) => {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${e},us&appid=1bc0ccc0703dbac68a7322b905da0722&units=imperial`)
-        // let suggestionData = null
         let temperature = response.data.main.temp
         let weather = response.data.weather[0].main
         setCurrentTemp(response.data.main)
         setCurrentWeather(response.data.weather)
-        // setSuggestion(suggestionData)
-
-        console.log(temperature, weather)
+    
 
         if(temperature < 40){
-          // suggestionData = clothingSuggestion.suggestions[0]
           setSuggestion(clothingSuggestion.suggestions[0])
+          setWeatherStyle('cold')
         }else if(temperature > 40 && temperature < 60){
           setSuggestion(clothingSuggestion.suggestions[2])
+          setWeatherStyle('chilli')
         }else if(temperature > 60 && temperature < 75){
           setSuggestion(clothingSuggestion.suggestions[3])
+          setWeatherStyle('warm')
         }else if(temperature > 75){
           setSuggestion(clothingSuggestion.suggestions[5])
+          setWeatherStyle('hot')
         }
-        
-
-
       }
-
-      // const suggestClothes = (e) =>{
-
-      // }
     
-      
-
-
         return ( 
             <>
             <Header/>
             <Search input={input} setInput={handleChange} currentTemp={currentTemp} setTemp={setTemp}/>
             <WeatherInfo currentWeather={currentWeather} currentTemp={currentTemp} setTemp={setTemp}/>
-            <ClothingInfo suggestion={suggestion} currentWeather={currentWeather} clothingSuggestions={clothingSuggestion} suggestion={suggestion}/>
-
+            <ClothingInfo style={weatherStyle} suggestion={suggestion} currentWeather={currentWeather} clothingSuggestions={clothingSuggestion} suggestion={suggestion}/>
             </>
 
          );
