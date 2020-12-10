@@ -1,0 +1,27 @@
+@mixin clothes-div($color,$textColor){
+    background-color:$color; 
+    color: $textColor;
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0.5em;
+    
+}
+
+.cold{
+   @include clothes-div(blue,white)
+}
+
+.chilli{
+  @include clothes-div(skyblue,white)
+}
+
+.warm{
+   @include clothes-div(orange,black)
+}
+
+.hot{
+  @include clothes-div(red,black)
+}
+
+

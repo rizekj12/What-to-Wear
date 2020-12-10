@@ -1,9 +1,10 @@
 import React from 'react';
+import "../CSS/Header.scss"
 
 const Header = () => {
     return ( 
         <>
-        <div>
+        <div className="header-div">
             <h1>What to Wear</h1>  
         </div>
         </>

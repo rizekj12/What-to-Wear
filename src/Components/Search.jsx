@@ -3,10 +3,9 @@ import React from 'react';
 const Search = (props) => {
 
     function changeWeather(e){
-        props.setTemp(e)
-       
+        props.setTemp(e) 
     }
-
+    
     return (
         <>
         <form onSubmit={(e) => {
