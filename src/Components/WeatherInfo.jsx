@@ -1,4 +1,5 @@
 import React from 'react';
+import "../CSS/WeatherInfo.scss"
 
 const WeatherInfo = (props) => {
    return (

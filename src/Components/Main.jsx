@@ -4,6 +4,7 @@ import Search from "./Search"
 import WeatherInfo from "./WeatherInfo"
 import ClothingInfo from "./ClothingInfo"
 import axios from "axios"
+import "../CSS/Main.scss"
 var json = require( "../clothing.json")
 
 const Main = () => {
