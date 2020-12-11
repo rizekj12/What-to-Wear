@@ -1,6 +1,15 @@
 @import "./variables";
+@import './ClothingInfo.scss';
 
 .header-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: $headerColor;
+    margin-top: -21px;
+    height:120px;
 }
 
+// .header-letters{
+//   justify-self: center;
+// }

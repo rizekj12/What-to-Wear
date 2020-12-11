@@ -1,27 +1,30 @@
-@mixin clothes-div($color,$textColor){
-    background-color:$color; 
-    color: $textColor;
+@mixin clothes-div($color1,$color2,$textColor){
+    // background-color:$color;
+    color:$textColor;
+    background: linear-gradient($color1,$color2);  
+}
+
+.defaultStyle{
     height: 350px;
     width: 200px;
     margin: auto;
-    border-radius: 0.5em;
-    
+    border-radius: 0.5em; 
 }
 
 .cold{
-   @include clothes-div(blue,white)
+   @include clothes-div(blue,lightblue,white)
 }
 
 .chilli{
-  @include clothes-div(skyblue,white)
+  @include clothes-div(skyblue,white,black)
 }
 
 .warm{
-   @include clothes-div(orange,black)
+   @include clothes-div(orange,yellow,black)
 }
 
 .hot{
-  @include clothes-div(red,black)
+  @include clothes-div(#F2BF5E,#F15F5D,black)
 }
 
 

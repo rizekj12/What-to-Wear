@@ -1,21 +1,33 @@
 import React from 'react';
+import { Form } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button';
+import "../CSS/Search.scss"
+
 
 const Search = (props) => {
 
     function changeWeather(e){
         props.setTemp(e) 
     }
-    
+
     return (
-        <>
-        <form onSubmit={(e) => {
-            e.preventDefault()
-            changeWeather(props.input)
-        }} action="">
-            <input onChange={props.setInput} type="text" placeholder="City,State..."/>
-            <button>submit</button>
-        </form>
-        </>
+        <div className="form-div">
+            <Form onSubmit={(e) => {
+                e.preventDefault()
+                changeWeather(props.input)
+            }} 
+                action=""
+                className="search-form"
+            
+            >
+                <Form.Control
+                    className="search" 
+                    onChange={props.setInput} 
+                    type="text" 
+                    placeholder="City,State..."/>
+                <Button>submit</Button>
+        </Form>
+        </div>
       );
 }
  

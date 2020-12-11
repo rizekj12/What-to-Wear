@@ -43,12 +43,18 @@ const Main = () => {
         }else if(temperature > 75){
           setSuggestion(clothingSuggestion.suggestions[5])
           setWeatherStyle('hot')
+        }else if(temperature > 60 && temperature < 75 && weather === "rain"){
+          setSuggestion(clothingSuggestion.suggestions[4])
+          setWeatherStyle('warm')
+        }else if(temperature < 50 && weather === "rain"){
+          setSuggestion(clothingSuggestion.suggestions[4])
+          setWeatherStyle('chilli')
         }
       }
     
         return ( 
             <>
-            <Header/>
+            <Header style={weatherStyle}/>
             <Search input={input} setInput={handleChange} currentTemp={currentTemp} setTemp={setTemp}/>
             <WeatherInfo currentWeather={currentWeather} currentTemp={currentTemp} setTemp={setTemp}/>
             <ClothingInfo style={weatherStyle} suggestion={suggestion} currentWeather={currentWeather} clothingSuggestions={clothingSuggestion} suggestion={suggestion}/>

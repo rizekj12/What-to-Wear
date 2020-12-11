@@ -6,7 +6,7 @@ const ClothingInfo = (props) => {
     return ( 
         <>
             {props.suggestion && 
-            <div className={props.style}>
+            <div className={` defaultStyle ${props.style}`}>
                 <h1>{props.suggestion.clothingType}</h1>
                 {
                     props.suggestion.appearalList.map((item) => 
