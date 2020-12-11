@@ -17,19 +17,16 @@ const Main = () => {
       const [input, setInput] = useState('');
       const [weatherStyle, setWeatherStyle] = useState('')
 
-
-
       const handleChange = e => {
         setInput(e.target.value);
       };
 
       const setTemp = async (e) => {
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${e},us&appid=1bc0ccc0703dbac68a7322b905da0722&units=imperial`)
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${e},us&appid=${process.env.REACT_APP_API_KEY}&units=imperial`)
         let temperature = response.data.main.temp
         let weather = response.data.weather[0].main
         setCurrentTemp(response.data.main)
         setCurrentWeather(response.data.weather)
-    
 
         if(temperature < 40){
           setSuggestion(clothingSuggestion.suggestions[0])
