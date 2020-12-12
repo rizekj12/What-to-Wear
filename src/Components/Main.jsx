@@ -7,6 +7,8 @@ import axios from "axios"
 import "../CSS/Main.scss"
 var json = require( "../clothing.json")
 
+//change
+
 const Main = () => {
 
       const [location, setLocation] = useState('');
