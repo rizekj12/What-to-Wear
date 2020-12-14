@@ -4,7 +4,7 @@ import "../CSS/ClothingInfo.scss";
 const ClothingInfo = (props) => {
   return (
     <div>
-      {props.suggestion &&  (
+      {props.suggestion && (
         <div className={`defaultStyle ${props.style}`}>
           <h1>{props.suggestion.clothingType}</h1>
           {props.suggestion.appearalList.map((item) => (
@@ -13,7 +13,6 @@ const ClothingInfo = (props) => {
         </div>
       )}
     </div>
-          
   );
 };
 

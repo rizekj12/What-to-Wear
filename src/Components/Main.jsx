@@ -7,7 +7,6 @@ import axios from "axios";
 import "../CSS/Main.scss";
 var json = require("../clothing.json");
 
-
 const Main = () => {
   const [location, setLocation] = useState(null)
   const [currentTemp, setCurrentTemp] = useState(null);
@@ -16,7 +15,6 @@ const Main = () => {
   const [suggestion, setSuggestion] = useState(null);
   const [input, setInput] = useState("");
   const [weatherStyle, setWeatherStyle] = useState("");
-
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -31,8 +29,6 @@ const Main = () => {
     setCurrentTemp(response.data.main);
     setCurrentWeather(response.data.weather);
     setLocation(response.data.name)
-
-    console.log(weather)
 
     if (temperature < 50 && weather === "Rain") {
       setSuggestion(clothingSuggestion.suggestions[1]);
@@ -79,7 +75,6 @@ const Main = () => {
         currentWeather={currentWeather}
         clothingSuggestions={clothingSuggestion}
         suggestion={suggestion}
-        // key={currentWeather}
       />
     </>
   );
