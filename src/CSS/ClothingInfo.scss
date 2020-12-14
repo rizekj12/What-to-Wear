@@ -12,7 +12,7 @@
 }
 
 .cold{
-   @include clothes-div(blue,lightblue,white)
+   @include clothes-div(blue,white,white)
 }
 
 .chilli{
@@ -20,11 +20,11 @@
 }
 
 .warm{
-   @include clothes-div(orange,yellow,black)
+   @include clothes-div(orange,white,black)
 }
 
 .hot{
-  @include clothes-div(#F2BF5E,#F15F5D,black)
+  @include clothes-div(#ee4441,white,black)
 }
 
 
