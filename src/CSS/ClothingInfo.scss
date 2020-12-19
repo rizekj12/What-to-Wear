@@ -1,30 +1,77 @@
-@mixin clothes-div($color1,$color2,$textColor){
-    // background-color:$color;
-    color:$textColor;
-    background: linear-gradient($color1,$color2);  
+@mixin clothes-div($color1){
+    border: 3px solid $color1; 
+}
+
+@mixin tempStyle($Tcolor){
+  background-color:$Tcolor
+}
+
+.mainDiv{
+  position: absolute;
+  top: 200px;
+  left: 36.5%;
 }
 
 .defaultStyle{
-    height: 350px;
-    width: 200px;
+    height: 480px;
+    width: 400px;
     margin: auto;
-    border-radius: 0.5em; 
+    border-radius: 0.5em;
+    border: 3px solid #00B4CC; 
+}
+
+.outfitTitle{
+  color:white;
+}
+
+.titleDiv{
+  background-color:#00B4CC;
+  position: absolute;
+  width: 400px;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.suggestDiv{
+  margin-top: 80px;
+}
+
+.innerDiv{
+  margin-top: -27px;
+}
+
+.innerDiv2{
+  margin-top: 40px;
 }
 
 .cold{
-   @include clothes-div(blue,white,white)
+   @include clothes-div(blue)
+}
+.cold2{
+  @include tempStyle(blue)
 }
 
 .chilli{
-  @include clothes-div(skyblue,white,black)
+  @include clothes-div(skyblue)
+}
+.chilli2{
+  @include tempStyle(skyblue)
 }
 
 .warm{
-   @include clothes-div(orange,white,black)
+   @include clothes-div(orange)
+}
+.warm2{
+  @include tempStyle(orange)
 }
 
 .hot{
-  @include clothes-div(#ee4441,white,black)
+  @include clothes-div(#ee4441)
 }
+.hot2{
+  @include tempStyle(#ee4441)
+}
+
+
 
 

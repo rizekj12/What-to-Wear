@@ -1,0 +1,74 @@
+@mixin clothes-div($color1){
+    border: 3px solid $color1; 
+}
+
+@mixin tempStyle($Tcolor){
+  background-color:$Tcolor
+}
+
+.weatherDiv{
+    position: absolute;
+    width: 25%;
+    height: 57%;
+    top: 275px;
+    right: 110px;
+    border-radius: 0.5em;
+    border: 3px solid #00B4CC
+}
+
+.todayTitle{
+    color:white;
+}
+
+.weatherTitle{
+    background-color:#00B4CC; 
+    width: 360px;
+    position: absolute;
+    top: 235px;
+    right: 110px;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+.weatherDiv2{
+    margin-top: 100px;
+}
+
+.subtitle{
+    margin-top:0px;
+    margin-bottom:inherit;
+}
+
+.cold{
+    @include clothes-div(blue)
+ }
+ .cold2{
+   @include tempStyle(blue)
+ }
+ 
+ .chilli{
+   @include clothes-div(skyblue)
+ }
+ .chilli2{
+   @include tempStyle(skyblue)
+ }
+ 
+ .warm{
+    @include clothes-div(orange)
+ }
+ .warm2{
+   @include tempStyle(orange)
+ }
+ 
+ .hot{
+   @include clothes-div(#ee4441)
+ }
+ .hot2{
+   @include tempStyle(#ee4441)
+ }
+ 
+ 
+ 
+ 
+ 
+

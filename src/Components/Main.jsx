@@ -3,6 +3,7 @@ import Header from "./Header";
 import Search from "./Search";
 import WeatherInfo from "./WeatherInfo";
 import ClothingInfo from "./ClothingInfo";
+import NewSearch from "./NewSearch"
 import axios from "axios";
 import "../CSS/Main.scss";
 var json = require("../clothing.json");
@@ -15,6 +16,7 @@ const Main = () => {
   const [suggestion, setSuggestion] = useState(null);
   const [input, setInput] = useState("");
   const [weatherStyle, setWeatherStyle] = useState("");
+  const [weatherStyle2, setWeatherStyle2] = useState("");
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -36,18 +38,23 @@ const Main = () => {
     }else if (temperature > 60 && temperature < 75 && weather === "Rain") {
       setSuggestion(clothingSuggestion.suggestions[4]);
       setWeatherStyle("warm");
+      setWeatherStyle2("warm2")
     } else if(temperature < 40) {
       setSuggestion(clothingSuggestion.suggestions[0]);
       setWeatherStyle("cold");
+      setWeatherStyle2("cold2")
     } else if (temperature > 40 && temperature < 60) {
       setSuggestion(clothingSuggestion.suggestions[2]);
       setWeatherStyle("chilli");
+      setWeatherStyle2("chilli2")
     } else if (temperature > 60 && temperature < 75) {
       setSuggestion(clothingSuggestion.suggestions[3]);
       setWeatherStyle("warm");
+      setWeatherStyle2("warm2")
     } else if (temperature > 75) {
       setSuggestion(clothingSuggestion.suggestions[5]);
       setWeatherStyle("hot");
+      setWeatherStyle2("hot2")
     }
   };
 
@@ -55,15 +62,26 @@ const Main = () => {
     <>
       <Header 
       location={location}
-      style={weatherStyle} 
+      style2={weatherStyle2} 
       />
-      <Search
+      {/* <Search
+        input={input}
+        setInput={handleChange}
+        currentTemp={currentTemp}
+        setTemp={setTemp}
+      /> */}
+
+      <NewSearch
+        style={weatherStyle}
         input={input}
         setInput={handleChange}
         currentTemp={currentTemp}
         setTemp={setTemp}
       />
+
       <WeatherInfo
+        style={weatherStyle}
+        style2={weatherStyle2}
         location={location}
         currentWeather={currentWeather}
         currentTemp={currentTemp}

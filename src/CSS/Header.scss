@@ -1,15 +1,40 @@
 @import "./variables";
 @import './ClothingInfo.scss';
 
+
+@mixin tempStyle($Tcolor){
+  background-color:$Tcolor
+}
+
 .header-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $headerColor;
+    background-color: #00B4CC;
     margin-top: -21px;
     height:120px;
 }
 
+.cold2{
+    @include clothes-div(blue)
+ }
+
+ 
+ .chilli2{
+   @include clothes-div(skyblue)
+ }
+ 
+ 
+ .warm2{
+    @include clothes-div(orange)
+ }
+ 
+ 
+ .hot2{
+   @include clothes-div(#ee4441)
+ }
+
+
 .location{
-    color: blue;
+    color: white;
 }
