@@ -1,9 +1,10 @@
+//This search bar style was borrowed from https://codepen.io/huange/pen/rbqsD
+
+@import "./variables";
 @mixin clothes-div($color1,$color2,$textColor){
     color:$textColor;
     background: linear-gradient($color1,$color2);  
 }
-
-
 .search {
   width: 100%;
   position: relative;
@@ -12,23 +13,22 @@
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #00B4CC;
+  border: $borderStyle;
   border-right: none;
   padding: 5px;
   height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
+    &:focus{
+        color: $primaryColor;  
+    }
 }
 
 .searchButton {
   height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  border: 1px solid $primaryColor;
+  background: $primaryColor;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -36,7 +36,6 @@
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 500px;
   position: absolute;

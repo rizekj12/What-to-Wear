@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Search from "./Search";
 import WeatherInfo from "./WeatherInfo";
 import ClothingInfo from "./ClothingInfo";
 import NewSearch from "./NewSearch"
@@ -12,7 +11,7 @@ const Main = () => {
   const [location, setLocation] = useState(null)
   const [currentTemp, setCurrentTemp] = useState(null);
   const [currentWeather, setCurrentWeather] = useState(null);
-  const [clothingSuggestion, setClothingSuggestion] = useState(json);
+  const [clothingSuggestion] = useState(json);
   const [suggestion, setSuggestion] = useState(null);
   const [input, setInput] = useState("");
   const [weatherStyle, setWeatherStyle] = useState("");
@@ -43,8 +42,7 @@ const Main = () => {
       setSuggestion(clothingSuggestion.suggestions[1]);
       setWeatherStyle("cold");
       setWeatherStyle2("cold2")
-    }
-    else if(temperature < 40) {
+    } else if(temperature < 40) {
       setSuggestion(clothingSuggestion.suggestions[0]);
       setWeatherStyle("cold");
       setWeatherStyle2("cold2")

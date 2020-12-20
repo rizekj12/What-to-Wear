@@ -1,3 +1,4 @@
+@import "./variables";
 @mixin clothes-div($color1){
     border: 3px solid $color1; 
 }
@@ -17,13 +18,11 @@
     width: 400px;
     margin: auto;
     border-radius: 0.5em;
-    border: 3px solid #00B4CC; 
+    border: $borderStyle; 
 }
-
 .outfitTitle{
   color:white;
 }
-
 .clothesImg{
   position: absolute;
   left: -500px;
@@ -31,27 +30,22 @@
   height:450px;
   width:450px;
 }
-
 .titleDiv{
-  background-color:#00B4CC;
+  background-color:$primaryColor;
   position: absolute;
   width: 400px;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
 }
-
 .suggestDiv{
   margin-top: 80px;
 }
-
 .innerDiv{
   margin-top: -27px;
 }
-
 .innerDiv2{
   margin-top: 40px;
 }
-
 .cold{
    @include clothes-div(blue)
 }
@@ -72,7 +66,6 @@
 .warm2{
   @include tempStyle(orange)
 }
-
 .hot{
   @include clothes-div(#ee4441)
 }

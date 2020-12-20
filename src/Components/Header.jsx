@@ -1,9 +1,7 @@
 import React from 'react';
 import "../CSS/Header.scss"
-//${props.style}
 
 const Header = (props) => {
-    let headerStyle = "header-div"
     return ( 
         <>
             <div className={` ${props.style2} header-div`}>

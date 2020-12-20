@@ -1,3 +1,4 @@
+@import "./variables";
 @mixin clothes-div($color1){
     border: 3px solid $color1; 
 }
@@ -13,19 +14,16 @@
     top: 275px;
     right: 110px;
     border-radius: 0.5em;
-    border: 3px solid #00B4CC
+    border: $borderStyle;
 }
-
 .temp{
     font-size: 32px;
 }
-
 .todayTitle{
     color:white;
 }
-
 .weatherTitle{
-    background-color:#00B4CC; 
+    background-color:$primaryColor; 
     width: 360px;
     position: absolute;
     top: 235px;
@@ -33,16 +31,13 @@
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
 }
-
 .weatherDiv2{
     margin-top: 38px;
 }
-
 .subtitle{
     margin-top:0px;
     margin-bottom:inherit;
 }
-
 .cold{
     @include clothes-div(blue)
  }
