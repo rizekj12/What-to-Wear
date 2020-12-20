@@ -9,11 +9,15 @@
 .weatherDiv{
     position: absolute;
     width: 25%;
-    height: 57%;
+    height: 50%;
     top: 275px;
     right: 110px;
     border-radius: 0.5em;
     border: 3px solid #00B4CC
+}
+
+.temp{
+    font-size: 32px;
 }
 
 .todayTitle{
@@ -31,7 +35,7 @@
 }
 
 .weatherDiv2{
-    margin-top: 100px;
+    margin-top: 38px;
 }
 
 .subtitle{

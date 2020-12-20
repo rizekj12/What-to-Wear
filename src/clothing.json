@@ -9,15 +9,20 @@
         "scarf",
         "boots"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img":"https://i.ibb.co/6t4xBXm/7952-C14-A-37-FC-485-B-B6-C6-FFE435-AEDB7-C-4-5005-c.jpg"
 },{
+    "clothingType": "Cold & Snow",
+    "appearalList":[
+        "beanie",
+        "sweater",
+        "Coat",
+        "gloves",
+        "scarf",
+        "boots"
+    ],
+    "img":"https://i.ibb.co/ctzpWr3/E8403-DDC-2402-4357-8-C0-A-D6-FA8977-D3-B6-4-5005-c.jpg"
+},
+{
     "clothingType": "Cold & Rainy",
     "appearalList":[
         "beanie",
@@ -28,14 +33,7 @@
         "umbrella",
         "rain boots"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img": "https://i.ibb.co/rtDVbHQ/6-A231223-B34-A-48-F6-83-BC-680064-C8-C592-4-5005-c.jpg"
 },{
     "clothingType": "Chilly",
     "appearalList":[
@@ -44,29 +42,16 @@
         "jeans",
         "boots or sneakers"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img":"https://i.ibb.co/xYY8Tbj/B52-CC558-3-E19-4-AF9-8-CD9-E0-A85-B184-D08-4-5005-c.jpg"
 },{
     "clothingType": "Warm",
     "appearalList":[
-        "lite sweater or T-shirt",
+        "T-shirt",
+        "dress",
         "jeans",
         "sneakers or causual shoes"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img":"https://i.ibb.co/KXnFpVd/0-D1-A5189-E215-4-AA2-9-B6-E-385365-BB3576-4-5005-c.jpg"
 }, {
     "clothingType": "Warm & Rainy",
     "appearalList":[
@@ -75,28 +60,15 @@
         "sneakers",
         "umbrella"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img": "https://i.ibb.co/rtDVbHQ/6-A231223-B34-A-48-F6-83-BC-680064-C8-C592-4-5005-c.jpg"
 },{
     "clothingType": "Hot",
     "appearalList":[
         "T-shirt or tank top",
-        "jeans are ok, preferably shorts",
+        "shorts",
+        "lite dress",
         "sneakers or causual shoes"
     ],
-    "images": {
-        "head": "",
-        "torso": "",
-        "legs":"",
-        "feet": "",
-        "accessory1":"",
-        "accessory2":""
-    }
+    "img": "https://i.ibb.co/gW3Qtwd/54-CF71-D6-7779-4-F24-9-DAD-3-FD9-C3-F02-BA0-4-5005-c.jpg"
 }
       ]}

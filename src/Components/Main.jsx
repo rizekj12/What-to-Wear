@@ -33,26 +33,31 @@ const Main = () => {
     setLocation(response.data.name)
 
     if (temperature < 50 && weather === "Rain") {
-      setSuggestion(clothingSuggestion.suggestions[1]);
+      setSuggestion(clothingSuggestion.suggestions[2]);
       setWeatherStyle("chilli");
     }else if (temperature > 60 && temperature < 75 && weather === "Rain") {
-      setSuggestion(clothingSuggestion.suggestions[4]);
+      setSuggestion(clothingSuggestion.suggestions[5]);
       setWeatherStyle("warm");
       setWeatherStyle2("warm2")
-    } else if(temperature < 40) {
+    }else if(temperature < 40 && weather === "Snow") {
+      setSuggestion(clothingSuggestion.suggestions[1]);
+      setWeatherStyle("cold");
+      setWeatherStyle2("cold2")
+    }
+    else if(temperature < 40) {
       setSuggestion(clothingSuggestion.suggestions[0]);
       setWeatherStyle("cold");
       setWeatherStyle2("cold2")
     } else if (temperature > 40 && temperature < 60) {
-      setSuggestion(clothingSuggestion.suggestions[2]);
+      setSuggestion(clothingSuggestion.suggestions[3]);
       setWeatherStyle("chilli");
       setWeatherStyle2("chilli2")
     } else if (temperature > 60 && temperature < 75) {
-      setSuggestion(clothingSuggestion.suggestions[3]);
+      setSuggestion(clothingSuggestion.suggestions[4]);
       setWeatherStyle("warm");
       setWeatherStyle2("warm2")
     } else if (temperature > 75) {
-      setSuggestion(clothingSuggestion.suggestions[5]);
+      setSuggestion(clothingSuggestion.suggestions[6]);
       setWeatherStyle("hot");
       setWeatherStyle2("hot2")
     }
@@ -64,12 +69,6 @@ const Main = () => {
       location={location}
       style2={weatherStyle2} 
       />
-      {/* <Search
-        input={input}
-        setInput={handleChange}
-        currentTemp={currentTemp}
-        setTemp={setTemp}
-      /> */}
 
       <NewSearch
         style={weatherStyle}

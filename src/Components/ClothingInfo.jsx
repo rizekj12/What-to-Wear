@@ -18,6 +18,10 @@ const ClothingInfo = (props) => {
             <h4 key={item}>{item}</h4>
           ))}
           </div>
+
+          <img
+          className="clothesImg" 
+          src={props.suggestion.img} alt=""/>
           
         </div>
       )}
