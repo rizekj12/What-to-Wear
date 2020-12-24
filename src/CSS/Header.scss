@@ -27,3 +27,10 @@
 .location{
     color: white;
 }
+
+@media (max-width: 450px){
+  .header-div{
+    width: 115%;
+  }
+}
+

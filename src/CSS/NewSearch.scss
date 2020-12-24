@@ -43,3 +43,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 450px){
+  .search{
+    width: 79.5%;
+  }
+
+  .wrap{
+    left: 67%;
+    top: 18%;
+  }
+}

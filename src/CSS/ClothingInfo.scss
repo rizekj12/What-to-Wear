@@ -73,6 +73,18 @@
   @include tempStyle(#ee4441)
 }
 
+@media (max-width: 450px){
+  .mainDiv{
+    position: absolute;
+    top: 325px;
+    left: 8%;
+  }
+
+  .defaultStyle{
+    height:395px;
+  }
+}
+
 
 
 

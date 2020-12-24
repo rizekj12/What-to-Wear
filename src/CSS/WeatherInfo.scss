@@ -65,6 +65,28 @@
  .hot2{
    @include tempStyle(#ee4441)
  }
+
+ @media (max-width: 450px){
+  .weatherDiv{
+    position: absolute;
+    width: 94%;
+    height: 19%;
+    top: 190px;
+    right: -9px;
+  }
+
+  .weatherTitle{
+    top: 152px;
+    right: -9px;
+    width: 94%;
+
+  }
+
+  .weatherDiv2{
+    display: flex;
+    flex-direction: row;
+  }
+}
  
  
  
