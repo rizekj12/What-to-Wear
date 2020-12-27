@@ -14,9 +14,11 @@ const ClothingInfo = (props) => {
               <h3>{props.suggestion.clothingType}</h3>
             </div>
             <div className="innerDiv2">
+              <ul>
               {props.suggestion.appearalList.map((item) => (
                 <h4 key={item}>{item}</h4>
               ))}
+              </ul>
             </div>
             <img 
             className="clothesImg" 
