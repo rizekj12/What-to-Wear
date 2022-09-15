@@ -34,15 +34,15 @@ const Main = () => {
     if (temperature < 50 && weather === "Rain") {
       setSuggestion(clothingSuggestion.suggestions[2]);
       setWeatherStyle("chilli");
-    }else if (temperature > 60 && temperature < 75 && weather === "Rain") {
+    } else if (temperature > 60 && temperature < 75 && weather === "Rain") {
       setSuggestion(clothingSuggestion.suggestions[5]);
       setWeatherStyle("warm");
       setWeatherStyle2("warm2")
-    }else if(temperature < 40 && weather === "Snow") {
+    } else if (temperature < 40 && weather === "Snow") {
       setSuggestion(clothingSuggestion.suggestions[1]);
       setWeatherStyle("cold");
       setWeatherStyle2("cold2")
-    } else if(temperature < 40) {
+    } else if (temperature < 40) {
       setSuggestion(clothingSuggestion.suggestions[0]);
       setWeatherStyle("cold");
       setWeatherStyle2("cold2")
@@ -63,9 +63,9 @@ const Main = () => {
 
   return (
     <>
-      <Header 
-      location={location}
-      style2={weatherStyle2} 
+      <Header
+        location={location}
+        style2={weatherStyle2}
       />
 
       <NewSearch
@@ -89,7 +89,6 @@ const Main = () => {
         suggestion={suggestion}
         currentWeather={currentWeather}
         clothingSuggestions={clothingSuggestion}
-        suggestion={suggestion}
       />
     </>
   );
